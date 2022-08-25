@@ -7,7 +7,7 @@ const DownloadEDISpecs = React.lazy(() => import('./views/dashboard/DownloadEDIS
 const BuildEDISpecs = React.lazy(() => import('./views/dashboard/BuildEDISpecs/BuildEDISpecs'))
 const TheOpenEDIformat = React.lazy(() => import('./views/dashboard/TheOpenEDIformat/TheOpenEDIformat'))
 //HowToGuides
-const WebEDI = React.lazy(() => import('./views/dashboard/HowToGuides/WebEDI/WebEDI'))
+const WebEDI = React.lazy(() => import('./views/dashboard/HowToGuides/webEDI/WebEDI'))
 const ValidateEDI= React.lazy(() =>  import('./views/dashboard/HowToGuides/ValidateEDI/ValidateEDI'))
 const ConvertEDI= React.lazy(() =>  import('./views/dashboard/HowToGuides/ConvertEDI/ConvertEDI'))
 const ViewDownload= React.lazy(() =>  import('./views/dashboard/HowToGuides/ViewDownload/ViewDownload'))
@@ -34,12 +34,13 @@ const routes = [
   { path: '/dashboard/DownloadEDISpecs', name: 'DownloadEDISpecs', element: DownloadEDISpecs },
   { path: '/dashboard/BuildEDISpecs', name: 'BuildEDISpecs', element: BuildEDISpecs },
   { path: '/dashboard/TheOpenEDIformat', name: 'TheOpenEDIformat', element: TheOpenEDIformat },
-  { path: '/dashboard/HowToGuides', name: 'HowToGuides', exact: true },
-  { path: '/dashboard/HowToGuides/WebEDI', name: 'WebEDI', element: WebEDI },
-  { path: '/dashboard/HowToGuides/ValidateEDI', name: 'ValidateEDI', element: ValidateEDI },
-  { path: '/dashboard/HowToGuides/ConvertEDI', name: 'ConvertEDI', element: ConvertEDI },
-  { path: '/dashboard/HowToGuides/ViewDownload', name: 'ViewDownload', element: ViewDownload },
-  { path: '/dashboard/HowToGuides/CreateImport', name: 'CreateAndImport', element: CreateImport },
+
+
+  { path: '/dashboard/HowToGuides/webEDI', name: 'WebEDI', element: WebEDI },
+  { path: '/HowToGuides/ValidateEDI', name: 'ValidateEDI', element: ValidateEDI },
+  { path: '/HowToGuides/ConvertEDI', name: 'ConvertEDI', element: ConvertEDI },
+  { path: '/HowToGuides/ViewDownload', name: 'ViewDownload', element: ViewDownload },
+  { path: '/HowToGuides/CreateImport', name: 'CreateAndImport', element: CreateImport },
 
   { path: '/developerAPI', name: 'Developer API', exact: true },
   { path: '/developerAPI/reference', name: 'API Reference', element: Reference },

@@ -70,7 +70,7 @@ const _nav = [
       {
         component: CNavItem,
         name: 'What is Web EDI Analyzer?',
-        to: '/dashboard/WebEDI',
+        to: '/dashboard/webEDI',
       },
       {
         component: CNavItem,
